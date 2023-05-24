@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&display=swap');
+@import 'vars';
+
+*{
+    margin: 0px;
+}
+header{
+    height: 600px;
+}
+.Header_main_div{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.Main_first_div{
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+
+    h1{
+        font-family: Squada One;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+    }
+
+    img{
+        width: 16px;
+        height: 16px;
+        margin-top: 2px;
+    }
+}
+.Main_second_div{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-around;
+
+    h3 {
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0em;
+    }
+}
+.Header_main_second_div{
+    height: 500px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+    div{
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        grid-row: 2/3;
+        width: 30%;
+        padding-left: 240px;
+
+        h2{
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 45px;
+            text-transform: uppercase;
+            margin: 0px;
+        }
+        span{
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+        }
+        button{
+            width: 306px;
+            height: 43px;
+            border-radius: 1%;
+            border: 1px solid #E05124;;
+            background-color: #E05124;
+            color: white;
+            font-size: 20px;
+            font-family: 'Roboto';
+        }
+    }
+}
+.First_section{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    div{
+        background: #FFFFFF;
+        box-shadow: 0px 16px 100px rgba(0, 0, 0, 0.2);
+        border-radius: 16px;
+        width: 1040px;
+        height: 223px;
+    }
+    h2{
+        font-size: 32px;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 800;
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+    p{
+        width: 700px;
+        height: 88px;
+        padding-left: 50px;
+        padding-top: 10px;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    img{
+        position: relative;
+        top: -280px;
+        left: 770px;
+    }
+}
+.second_section{
+    padding-top: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+.second_section_first_div{
+    height: 600px;
+    width: 336px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    border: 1px solid black;
+}
+.second_section_first_div_first{
+    height: 150px;
+    h2{
+        padding-top: 10px;
+        height: 40px;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    p{
+        height: 40px;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    span{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        text-transform: uppercase;
+        color: #E05124;
+        display: flex;
+        justify-content: center;
+        height: 50px;
+    }
+}
+.second_section_first_div_second{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+}
+.second_section_one{
+    background-color: white;
+    opacity: 0.05;
+    height: 63px;
+    display: flex;
+    box-shadow: 0px 16px 100px rgba(31, 49, 3, 0.33);
+}
+.second_section_two{
+    @extend .second_section_one;
+    background-color: gray;
+}
+.third_section{
+    height: 500px;
+
+}
+.third_section_first{
+    height: 60px;
+}
