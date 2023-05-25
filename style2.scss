@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&display=swap');
 @import 'vars';
 
@@ -8,7 +9,7 @@ header{
     height: 600px;
 }
 .Header_main_div{
-    margin-top: 15px;
+    margin-top: 25px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
@@ -18,7 +19,7 @@ header{
     justify-content: center;
 
     h1{
-        font-family: Squada One;
+        font-family: $font-family;
         font-size: 18px;
         font-weight: 400;
         line-height: 19px;
@@ -35,9 +36,9 @@ header{
     grid-column: 2/3;
     display: flex;
     justify-content: space-around;
-
+    padding-right: 100px;
     h3 {
-        font-family: Montserrat;
+        font-family: $font-family;
         font-size: 15px;
         font-weight: 700;
         line-height: 15px;
@@ -56,7 +57,7 @@ header{
         justify-content: space-around;
         grid-row: 2/3;
         width: 30%;
-        padding-left: 240px;
+        padding-left: 13%;
 
         h2{
             font-family: $font-family;
@@ -81,7 +82,7 @@ header{
             background-color: #E05124;
             color: white;
             font-size: 20px;
-            font-family: 'Roboto';
+            font-family: $font-family;
         }
     }
 }
@@ -93,7 +94,7 @@ header{
         background: #FFFFFF;
         box-shadow: 0px 16px 100px rgba(0, 0, 0, 0.2);
         border-radius: 16px;
-        width: 1040px;
+        width: 1140px;
         height: 223px;
     }
     h2{
@@ -122,18 +123,18 @@ header{
 }
 .second_section{
     padding-top: 200px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 11%;
+    padding-right: 12%;
     height: 600px;
     display: flex;
     justify-content: space-around;
 }
 .second_section_first_div{
-    height: 600px;
-    width: 336px;
+    height: 593px;
+    width: 339px;
     background: #FFFFFF;
-    border-radius: 16px;
-    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 16px 100px;
 }
 .second_section_first_div_first{
     height: 150px;
@@ -160,7 +161,7 @@ header{
         padding-right: 10px;
     }
     span{
-        font-family: 'Montserrat';
+        font-family: $font-family;
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
@@ -176,22 +177,240 @@ header{
     display: flex;
     flex-direction: column;
     height: 450px;
+    font-family: $font-family;
 }
 .second_section_one{
     background-color: white;
-    opacity: 0.05;
     height: 63px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0px 16px 100px rgba(31, 49, 3, 0.33);
+    img{
+        width: 80px;
+        position: relative;
+        top: 8px;
+        left: 20px;
+    }
 }
 .second_section_two{
     @extend .second_section_one;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.03);
 }
 .third_section{
-    height: 500px;
-
+    padding-top: 150px;
+    height: 700px;
 }
 .third_section_first{
-    height: 60px;
+    height: 160px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 13%;
+    h2{
+        font-family: $font-family;
+        font-size: 24px;
+    }
+    p{
+        font-family: $font-family;
+        font-size: 18px;
+        line-height: 60px;
+    }
+}
+.third_section_second{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+@mixin grid($column, $rows) {
+    grid-column: $column;
+    grid-row: $rows;
+}
+@mixin img($height, $width, $position, $top, $left){
+    height: $height;
+    width: $width;
+    position: $position;
+    top: $top;
+    left: $left;
+}
+.third_section_first_container{
+    @include grid(1/2, 1/2);
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+    width: 90%;
+    background: linear-gradient(112.66deg, #27D26C 0%, #658324 75.52%, #A56B26 100%);
+    box-shadow: 0px 20px 100px rgba(33, 99, 10, 0.65);
+    border-radius: 16px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    img{
+        @include img(270px, 140px, relative, -247px, 440px);
+    }
+    h2{
+        padding-left: 60px;
+        padding-top: 40px;
+        font-family: $font-family;
+        font-weight: 700;
+    }
+    p{
+        padding-left: 60px;
+        padding-top: 5px;
+        font-family: $font-family;
+        line-height: 35px;
+    }
+}
+.third_section_second_container{
+    @include grid(2/3, 1/2);
+    @extend .third_section_first_container;
+    img{
+        @include img(400px, 300px, relative, -187px, 330px);
+    }
+}
+.third_section_third_container{
+    @include grid(1/2, 2/3);
+    @extend .third_section_first_container;
+    img{
+        @include img(270px, 300px, relative, -194px, 360px);
+    }
+}
+.third_section_fourth_container{
+    @include grid(2/3, 2/3);
+    @extend .third_section_first_container;
+    img{
+        @include img(270px, 300px, relative, -145px, 320px);
+    }
+}
+.fourth_section{
+    height: 800px;
+    width: 90%;
+    padding-top: 120px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: center;
+}
+.fourth_section_main_div{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    height: 680px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fourth_section_head{
+    width: 1100px;
+    padding-top: 15px;
+    padding-left: 15px;
+    h2{
+        text-align: start;
+        padding-bottom: 10px;
+        font-family: $font-family;
+    }
+}
+.fourth_section_main_div_first{
+    height: 580px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    width: 1100px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.fourth_section_header{
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    height: 30px;
+    padding-top: 20px;
+    font-family: $font-family;
+    p{
+        width: 250px;
+    }
+}
+.fourth_section_main_first{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+}
+.main_first_one{
+    width: 250px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 30px 30px;
+    padding-top: 20px;
+    img{
+        position: relative;
+        top: 8px;
+        left: 2px;
+        width: 40px;
+    }
+    p{
+        grid-column: 2/3;
+        font-family: 'Open Sans';
+    }
+    span{
+        grid-column: 2/3;
+        font-family: 'Open Sans';
+    }
+}
+.main_first_two{
+    width: 250px;
+    display: grid;
+    grid-template-rows: 30px 30px;
+    padding-top: 20px;
+    p{
+        grid-row: 1/2;
+        font-family: 'Open Sans';
+    }
+    span{
+        grid-row: 2/3;
+    }
+}
+.main_p{
+    padding-top: 30px;
+    width: 250px;
+    font-family: 'Open Sans'
+}
+.main_p_sec{
+    @extend .main_p;
+    color: $user-color;
+}
+.footer{
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: linear-gradient(112.66deg, #22E871 0%, #658324 75.52%, #A56B26 100%);
+    box-shadow: 0px 20px 100px rgba(33, 99, 10, 0.65);
+    color: white;
+}
+@mixin font_footer($font-size, $font-family, $font-weight){
+    font-size: $font-size;
+    font-family: $font-family;
+    font-weight: $font-weight;
+}
+.footer_first{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding-left: 28%;
+    @include font_footer(18px, $font-family, 800);
+    p:last-child{
+    @include font_footer(14px, $font-family, 100)
+    }
+}
+.footer_second{
+    @include font_footer(16px, $font-family, 500);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    padding-left: 30%;
 }
