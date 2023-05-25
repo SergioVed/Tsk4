@@ -179,6 +179,12 @@ header{
     height: 450px;
     font-family: $font-family;
 }
+.second_section_second_div_second{
+    @extend .second_section_first_div_second;
+}
+.second_section_third_div_second{
+    @extend .second_section_first_div_second
+}
 .second_section_one{
     background-color: white;
     height: 63px;

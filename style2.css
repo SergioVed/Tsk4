@@ -177,7 +177,7 @@ header {
   height: 50px;
 }
 
-.second_section_first_div_second {
+.second_section_first_div_second, .second_section_third_div_second, .second_section_second_div_second {
   display: flex;
   flex-direction: column;
   height: 450px;
