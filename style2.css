@@ -5,40 +5,37 @@
 }
 
 header {
-  height: 600px;
-}
-
-.Header_main_div {
+  height: 100px;
   margin-top: 25px;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
-.Main_first_div {
+.logo {
   grid-column: 1/2;
   display: flex;
   justify-content: center;
 }
-.Main_first_div h1 {
+.logo h1 {
   font-family: "Montserrat";
   font-size: 18px;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0em;
 }
-.Main_first_div img {
+.logo img {
   width: 16px;
   height: 16px;
   margin-top: 2px;
 }
 
-.Main_second_div {
+.menu {
   grid-column: 2/3;
   display: flex;
   justify-content: space-around;
   padding-right: 100px;
 }
-.Main_second_div h3 {
+.menu h3 {
   font-family: "Montserrat";
   font-size: 15px;
   font-weight: 700;
@@ -46,12 +43,12 @@ header {
   letter-spacing: 0em;
 }
 
-.Header_main_second_div {
+.main__title {
   height: 500px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
 }
-.Header_main_second_div div {
+.main__title div {
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -60,7 +57,7 @@ header {
   width: 30%;
   padding-left: 13%;
 }
-.Header_main_second_div div h2 {
+.main__title div h2 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
@@ -68,14 +65,14 @@ header {
   text-transform: uppercase;
   margin: 0px;
 }
-.Header_main_second_div div span {
+.main__title div span {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
 }
-.Header_main_second_div div button {
+.main__title div button {
   width: 306px;
   height: 43px;
   border-radius: 1%;
@@ -86,19 +83,19 @@ header {
   font-family: "Montserrat";
 }
 
-.First_section {
+.main__description {
   height: 250px;
   display: flex;
   justify-content: center;
 }
-.First_section div {
+.main__description div {
   background: #FFFFFF;
   box-shadow: 0px 16px 100px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
   width: 1140px;
   height: 223px;
 }
-.First_section h2 {
+.main__description h2 {
   font-size: 32px;
   font-family: "Montserrat";
   font-style: normal;
@@ -106,7 +103,7 @@ header {
   padding-left: 50px;
   padding-top: 50px;
 }
-.First_section p {
+.main__description p {
   width: 700px;
   height: 88px;
   padding-left: 50px;
@@ -116,13 +113,13 @@ header {
   font-weight: 400;
   font-size: 18px;
 }
-.First_section img {
+.main__description img {
   position: relative;
   top: -280px;
   left: 770px;
 }
 
-.second_section {
+.main__subscriptions {
   padding-top: 200px;
   padding-left: 11%;
   padding-right: 12%;
@@ -131,7 +128,7 @@ header {
   justify-content: space-around;
 }
 
-.second_section_first_div {
+.main__subscriptions-card {
   height: 593px;
   width: 339px;
   background: #FFFFFF;
@@ -139,10 +136,10 @@ header {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 16px 100px;
 }
 
-.second_section_first_div_first {
+.main__subscriptions-card-title {
   height: 150px;
 }
-.second_section_first_div_first h2 {
+.main__subscriptions-card-title h2 {
   padding-top: 10px;
   height: 40px;
   font-family: "Montserrat";
@@ -153,7 +150,7 @@ header {
   text-align: center;
   text-transform: uppercase;
 }
-.second_section_first_div_first p {
+.main__subscriptions-card-title p {
   height: 40px;
   font-family: "Montserrat";
   font-style: normal;
@@ -164,7 +161,7 @@ header {
   padding-left: 10px;
   padding-right: 10px;
 }
-.second_section_first_div_first span {
+.main__subscriptions-card-title span {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -177,7 +174,7 @@ header {
   height: 50px;
 }
 
-.second_section_first_div_second, .second_section_third_div_second, .second_section_second_div_second {
+.main__subscriptions-card-text, .second_section_third_div_second, .second_section_second_div_second {
   display: flex;
   flex-direction: column;
   height: 450px;
@@ -203,29 +200,29 @@ header {
   background-color: rgba(0, 0, 0, 0.03);
 }
 
-.third_section {
+.main__diet-types {
   padding-top: 150px;
   height: 700px;
 }
 
-.third_section_first {
+.main__diet-types-header {
   height: 160px;
   width: 80%;
   display: flex;
   flex-direction: column;
   margin-left: 13%;
 }
-.third_section_first h2 {
+.main__diet-types-header h2 {
   font-family: "Montserrat";
   font-size: 24px;
 }
-.third_section_first p {
+.main__diet-types-header p {
   font-family: "Montserrat";
   font-size: 18px;
   line-height: 60px;
 }
 
-.third_section_second {
+.main__diet-types-container {
   padding-top: 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -235,7 +232,7 @@ header {
   color: white;
 }
 
-.third_section_first_container, .third_section_fourth_container, .third_section_third_container, .third_section_second_container {
+.main__diet-types-card-first, .main__diet-types-card-fourth, .main__diet-types-card-third, .main__diet-types-card-second {
   grid-column: 0.5;
   grid-row: 0.5;
   display: flex;
@@ -249,31 +246,31 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
-.third_section_first_container img, .third_section_fourth_container img, .third_section_third_container img, .third_section_second_container img {
+.main__diet-types-card-first img, .main__diet-types-card-fourth img, .main__diet-types-card-third img, .main__diet-types-card-second img {
   height: 270px;
   width: 140px;
   position: relative;
   top: -247px;
   left: 440px;
 }
-.third_section_first_container h2, .third_section_fourth_container h2, .third_section_third_container h2, .third_section_second_container h2 {
+.main__diet-types-card-first h2, .main__diet-types-card-fourth h2, .main__diet-types-card-third h2, .main__diet-types-card-second h2 {
   padding-left: 60px;
   padding-top: 40px;
   font-family: "Montserrat";
   font-weight: 700;
 }
-.third_section_first_container p, .third_section_fourth_container p, .third_section_third_container p, .third_section_second_container p {
+.main__diet-types-card-first p, .main__diet-types-card-fourth p, .main__diet-types-card-third p, .main__diet-types-card-second p {
   padding-left: 60px;
   padding-top: 5px;
   font-family: "Montserrat";
   line-height: 35px;
 }
 
-.third_section_second_container {
+.main__diet-types-card-second {
   grid-column: 0.6666666667;
   grid-row: 0.5;
 }
-.third_section_second_container img {
+.main__diet-types-card-second img {
   height: 400px;
   width: 300px;
   position: relative;
@@ -281,11 +278,11 @@ header {
   left: 330px;
 }
 
-.third_section_third_container {
+.main__diet-types-card-third {
   grid-column: 0.5;
   grid-row: 0.6666666667;
 }
-.third_section_third_container img {
+.main__diet-types-card-third img {
   height: 270px;
   width: 300px;
   position: relative;
@@ -293,11 +290,11 @@ header {
   left: 360px;
 }
 
-.third_section_fourth_container {
+.main__diet-types-card-fourth {
   grid-column: 0.6666666667;
   grid-row: 0.6666666667;
 }
-.third_section_fourth_container img {
+.main__diet-types-card-fourth img {
   height: 270px;
   width: 300px;
   position: relative;
@@ -305,7 +302,7 @@ header {
   left: 320px;
 }
 
-.fourth_section {
+.main__user-list {
   height: 800px;
   width: 90%;
   padding-top: 120px;
@@ -315,7 +312,7 @@ header {
   justify-content: center;
 }
 
-.fourth_section_main_div {
+.main__user-list-block {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   height: 680px;
@@ -325,18 +322,18 @@ header {
   align-items: center;
 }
 
-.fourth_section_head {
+.main__user-list-title {
   width: 1100px;
   padding-top: 15px;
   padding-left: 15px;
 }
-.fourth_section_head h2 {
+.main__user-list-title h2 {
   text-align: start;
   padding-bottom: 10px;
   font-family: "Montserrat";
 }
 
-.fourth_section_main_div_first {
+.main__user-list-container {
   height: 580px;
   padding-left: 15px;
   padding-right: 15px;
@@ -345,7 +342,7 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.fourth_section_header {
+.main__user-list-container-header {
   display: flex;
   justify-content: space-around;
   text-align: start;
@@ -353,49 +350,49 @@ header {
   padding-top: 20px;
   font-family: "Montserrat";
 }
-.fourth_section_header p {
+.main__user-list-container-header p {
   width: 250px;
 }
 
-.fourth_section_main_first {
+.main__user-list-container-info {
   display: flex;
   justify-content: space-around;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
 }
 
-.main_first_one {
+.main__user-list-container-user {
   width: 250px;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 30px 30px;
   padding-top: 20px;
 }
-.main_first_one img {
+.main__user-list-container-user img {
   position: relative;
   top: 8px;
   left: 2px;
   width: 40px;
 }
-.main_first_one p {
+.main__user-list-container-user p {
   grid-column: 2/3;
   font-family: "Open Sans";
 }
-.main_first_one span {
+.main__user-list-container-user span {
   grid-column: 2/3;
   font-family: "Open Sans";
 }
 
-.main_first_two {
+.main__user-list-container-time {
   width: 250px;
   display: grid;
   grid-template-rows: 30px 30px;
   padding-top: 20px;
 }
-.main_first_two p {
+.main__user-list-container-time p {
   grid-row: 1/2;
   font-family: "Open Sans";
 }
-.main_first_two span {
+.main__user-list-container-time span {
   grid-row: 2/3;
 }
 
@@ -419,7 +416,7 @@ header {
   color: white;
 }
 
-.footer_first {
+.footer__logo {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -429,13 +426,13 @@ header {
   font-family: "Montserrat";
   font-weight: 800;
 }
-.footer_first p:last-child {
+.footer__logo p:last-child {
   font-size: 14px;
   font-family: "Montserrat";
   font-weight: 100;
 }
 
-.footer_second {
+.footer__menu {
   font-size: 16px;
   font-family: "Montserrat";
   font-weight: 500;
